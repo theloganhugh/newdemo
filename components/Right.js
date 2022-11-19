@@ -87,7 +87,7 @@ export default function Right(props) {
 
     },
     onSubmit: async(values) => {
-      alert(JSON.stringify(values, null, 2));
+      
       const ans = await  createUserWithEmailAndPassword(auth, values.email, values.pass);
     
     },
