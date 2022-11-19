@@ -34,11 +34,7 @@ export default function Right(props) {
   ];
   
 
-  const [data, setData] = useState({
-    email: '',
-    password: '',
-  })
-
+ 
     const actionCodeSettings = {
       // The URL to redirect to for sign-in completion. This is also the deep
       // link for mobile redirects. The domain (www.example.com) for this URL
@@ -77,11 +73,7 @@ export default function Right(props) {
       value: key,
     };
   });
-  const handleSubmit = async () => {
-         const ans = await  createUserWithEmailAndPassword(auth, data.email, data.password);
-    console.log(ans)
-console.log(data.email)
-  };
+
   const formik = useFormik({
     initialValues: {
       f_name:'',
