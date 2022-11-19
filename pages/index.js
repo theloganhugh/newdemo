@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Fragment } from "react";
-import Right from "../components/right";
-import Left from "../components/left";
+import Right from "../components/Right";
+import Left from "../components/Left";
 export default function Home() {
   return (
     <Fragment>
